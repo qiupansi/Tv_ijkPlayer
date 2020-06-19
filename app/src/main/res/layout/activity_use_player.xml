@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <SurfaceView
+        android:id="@+id/surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <FrameLayout
+        android:id="@+id/flLoading"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pb_loading"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:textColor="#ffffff"
+            android:text="正在加载" />
+
+        <ProgressBar
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="6dp"
+            android:indeterminate="false"
+            android:indeterminateDrawable="@drawable/video_loading"
+            android:padding="5dp" />
+    </FrameLayout>
+    <tv.onairm.com.flowvideo.widget.ProgressTextView
+        android:id="@+id/progressText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ptv_textColor="#fff"
+        app:ptv_thumWidth="18dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="30dp"
+        />
+
+    <tv.onairm.com.flowvideo.widget.CustomSeekBar
+        android:id="@+id/videoSeekBar"
+        style="@style/ProgressBar_Mini"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:paddingEnd="0dp"
+        android:paddingStart="0dp"
+        android:thumb="@mipmap/progress_thumb"
+        android:layout_gravity="bottom"
+        />
+</FrameLayout>
