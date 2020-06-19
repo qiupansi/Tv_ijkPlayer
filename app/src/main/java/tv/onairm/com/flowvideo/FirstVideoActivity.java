@@ -15,7 +15,8 @@ import android.widget.FrameLayout;
 import tv.danmaku.ijk.media.player.IMediaPlayer;
 import tv.danmaku.ijk.media.player.IjkMediaPlayer;
 
-
+//更多TV项目资源(如桌面，直播点播，教育，应用市场，文件管理器，设置，酒店应用等)，添加微信：qiupansi
+//If you want more TV project resources,such as TvLauncher,TvLive,TvAppStore,TvSettings,TvFileManager,TvEducation,TvHotel,TvMusic,TvRemote and so on，Add me wechat：qiupansi
 public class FirstVideoActivity extends AppCompatActivity implements SurfaceHolder.Callback {
     private String TAG = "FirstVideoActivity";
     IjkMediaPlayer player;
